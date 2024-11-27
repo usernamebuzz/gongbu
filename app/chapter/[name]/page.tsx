@@ -1,6 +1,4 @@
-'use client'
-
-import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { ChevronLeft } from 'lucide-react'
@@ -11,7 +9,6 @@ import { WordSlide } from './word-slide'
 type Params = Promise<{ name: string }>
 
 export default async function ChapterPage({ params }: { params: Params }) {
-  const router = useRouter()
   const { name } = await params
   const chapter = data.chapters.find((c: Chapter) => c.name === name)
 
@@ -22,14 +19,13 @@ export default async function ChapterPage({ params }: { params: Params }) {
   return (
     <div className='min-h-screen bg-gray-50 p-4 flex flex-col'>
       <div className='max-w-md mx-auto w-full flex-grow'>
-        <Button
-          variant='ghost'
-          className='mb-4'
-          onClick={() => router.push('/')}
-        >
-          <ChevronLeft className='h-4 w-4 mr-2' />
-          Back to Chapters
-        </Button>
+        <Link href='/'>
+          {' '}
+          <Button variant='ghost' className='mb-4'>
+            <ChevronLeft className='h-4 w-4 mr-2' />
+            Back to Chapters
+          </Button>
+        </Link>
         <h2 className='text-2xl font-bold mb-4'>{chapter.name}</h2>
 
         <div className='grid grid-cols-1  gap-8'>
