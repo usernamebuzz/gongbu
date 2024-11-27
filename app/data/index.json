@@ -13,7 +13,7 @@
         { "id": 7, "korean": "오랜만입니다", "english": "Long time no see" },
         {
           "id": 8,
-          "korean": "수고하세요",
+          "korean": "고생하셨습니다",
           "english": "Thank you for your hard work"
         },
         { "id": 9, "korean": "좋은 하루 되세요", "english": "Have a nice day" },
@@ -32,7 +32,7 @@
         { "id": 6, "korean": "흰색", "english": "White" },
         { "id": 7, "korean": "주황색", "english": "Orange" },
         { "id": 8, "korean": "보라색", "english": "Purple" },
-        { "id": 9, "korean": "핑크색", "english": "Pink" },
+        { "id": 9, "korean": "분홍색", "english": "Pink" },
         { "id": 10, "korean": "회색", "english": "Grey" }
       ]
     }
