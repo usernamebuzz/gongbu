@@ -1,48 +1,31 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import { ChevronLeft, ChevronRight, Shuffle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Progress } from '@/components/ui/progress'
 import { Word } from '@/app/types'
+import { ChevronLeft, ChevronRight, Shuffle } from 'lucide-react'
+import { useShuffleWords } from '@/app/hooks/use-shuffle-words'
+import { useSliderControl } from '@/app/hooks/use-slider-control'
 
 interface WordSlideProps {
   words: Word[]
 }
 
 export function WordSlide({ words: initialWords }: WordSlideProps) {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [showMeaning, setShowMeaning] = useState(true)
-  const [words, setWords] = useState(initialWords)
-
-  const shuffleWords = (array: Word[]) => {
-    const shuffled = [...array]
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1))
-      ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
-    }
-    return shuffled
-  }
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length)
-    setShowMeaning(true)
-  }
-
-  const handlePrevious = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + words.length) % words.length
-    )
-    setShowMeaning(true)
-  }
-
-  const toggleMeaning = () => {
-    setShowMeaning(!showMeaning)
-  }
+  const { words, shuffleWords } = useShuffleWords(initialWords)
+  const {
+    currentIndex,
+    showMeaning,
+    handleNext,
+    handlePrevious,
+    toggleMeaning,
+    setCurrentIndex,
+    setShowMeaning
+  } = useSliderControl(words.length)
 
   const handleShuffle = () => {
-    setWords(shuffleWords(words))
+    shuffleWords()
     setCurrentIndex(0)
     setShowMeaning(true)
   }
@@ -54,7 +37,7 @@ export function WordSlide({ words: initialWords }: WordSlideProps) {
       <Card>
         <CardContent className='p-6'>
           <div className='text-center mb-4 flex flex-row space-x-28 '>
-          <Button onClick={handleShuffle} variant='outline' size='icon'>
+            <Button onClick={handleShuffle} variant='outline' size='icon'>
               <Shuffle className='h-4 w-4' />
             </Button>
             <p className='text-sm text-gray-500'>
