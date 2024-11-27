@@ -8,9 +8,12 @@ import data from '@/app/data/index.json'
 import { Chapter } from '@/app/types'
 import { WordSlide } from './word-slide'
 
-export default function ChapterPage({ params }: { params: { name: string } }) {
+type Params = Promise<{ name: string }>
+
+export default async function ChapterPage({ params }: { params: Params }) {
   const router = useRouter()
-  const chapter = data.chapters.find((c: Chapter) => c.name === params.name)
+  const { name } = await params
+  const chapter = data.chapters.find((c: Chapter) => c.name === name)
 
   if (!chapter) {
     return <div>Chapter not found</div>
