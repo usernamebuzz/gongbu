@@ -1,7 +1,7 @@
 'use client'
 
-import { useState } from 'react'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { ChevronLeft, ChevronRight, Shuffle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Progress } from '@/components/ui/progress'
@@ -11,9 +11,19 @@ interface WordSlideProps {
   words: Word[]
 }
 
-export function WordSlide({ words }: WordSlideProps) {
+export function WordSlide({ words: initialWords }: WordSlideProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [showMeaning, setShowMeaning] = useState(true)
+  const [words, setWords] = useState(initialWords)
+
+  const shuffleWords = (array: Word[]) => {
+    const shuffled = [...array]
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+    }
+    return shuffled
+  }
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length)
@@ -31,13 +41,22 @@ export function WordSlide({ words }: WordSlideProps) {
     setShowMeaning(!showMeaning)
   }
 
+  const handleShuffle = () => {
+    setWords(shuffleWords(words))
+    setCurrentIndex(0)
+    setShowMeaning(true)
+  }
+
   const progress = ((currentIndex + 1) / words.length) * 100
 
   return (
     <div className='w-full max-w-sm mx-auto'>
       <Card>
         <CardContent className='p-6'>
-          <div className='text-center mb-4'>
+          <div className='text-center mb-4 flex flex-row space-x-28 '>
+          <Button onClick={handleShuffle} variant='outline' size='icon'>
+              <Shuffle className='h-4 w-4' />
+            </Button>
             <p className='text-sm text-gray-500'>
               {currentIndex + 1} / {words.length}
             </p>
