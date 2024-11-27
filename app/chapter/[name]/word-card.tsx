@@ -6,13 +6,14 @@ import { Progress } from '@/components/ui/progress'
 import { Word } from '@/app/types'
 import { ChevronLeft, ChevronRight, Shuffle } from 'lucide-react'
 import { useShuffleWords } from '@/app/hooks/use-shuffle-words'
-import { useSliderControl } from '@/app/hooks/use-slider-control'
+import { useCardProgress } from '@/app/hooks/use-card-progress'
 
-interface WordSlideProps {
+
+interface WordCardProps {
   words: Word[]
 }
 
-export function WordSlide({ words: initialWords }: WordSlideProps) {
+export function WordCard({ words: initialWords }: WordCardProps) {
   const { words, shuffleWords } = useShuffleWords(initialWords)
   const {
     currentIndex,
@@ -22,7 +23,7 @@ export function WordSlide({ words: initialWords }: WordSlideProps) {
     toggleMeaning,
     setCurrentIndex,
     setShowMeaning
-  } = useSliderControl(words.length)
+  } = useCardProgress(words.length)
 
   const handleShuffle = () => {
     shuffleWords()

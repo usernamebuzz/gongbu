@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { ChevronLeft } from 'lucide-react'
 import data from '@/app/data/index.json'
 import { Chapter } from '@/app/types'
-import { WordSlide } from './word-slide'
+import { WordCard } from './word-card'
 
 type Params = Promise<{ name: string }>
 
@@ -31,7 +31,7 @@ export default async function ChapterPage({ params }: { params: Params }) {
         <div className='grid grid-cols-1  gap-8'>
           <div>
             <h3 className='text-xl font-semibold mb-4'>단어 카드</h3>
-            <WordSlide words={chapter.words} />
+            <WordCard words={chapter.words} />
           </div>
 
           <div className='flex flex-col'>
