@@ -13,18 +13,18 @@ interface WordSlideProps {
 
 export function WordSlide({ words }: WordSlideProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [showMeaning, setShowMeaning] = useState(false)
+  const [showMeaning, setShowMeaning] = useState(true)
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length)
-    setShowMeaning(false)
+    setShowMeaning(true)
   }
 
   const handlePrevious = () => {
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + words.length) % words.length
     )
-    setShowMeaning(false)
+    setShowMeaning(true)
   }
 
   const toggleMeaning = () => {
