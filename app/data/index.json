@@ -11,11 +11,7 @@
         { "id": 5, "korean": "잘 지내세요?", "english": "How are you?" },
         { "id": 6, "korean": "반갑습니다", "english": "Nice to meet you" },
         { "id": 7, "korean": "오랜만입니다", "english": "Long time no see" },
-        {
-          "id": 8,
-          "korean": "고생하셨습니다",
-          "english": "Thank you for your hard work"
-        },
+        { "id": 8, "korean": "고생하셨습니다", "english": "Thank you for your hard work" },
         { "id": 9, "korean": "좋은 하루 되세요", "english": "Have a nice day" },
         { "id": 10, "korean": "좋은 밤 되세요", "english": "Have a nice night" }
       ]
@@ -34,6 +30,22 @@
         { "id": 8, "korean": "보라색", "english": "Purple" },
         { "id": 9, "korean": "분홍색", "english": "Pink" },
         { "id": 10, "korean": "회색", "english": "Grey" }
+      ]
+    },
+    {
+      "name": "Body",
+      "image": "https://plus.unsplash.com/premium_photo-1711610116051-393980af2c16?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "머리", "english": "Head" },
+        { "id": 2, "korean": "눈", "english": "Eye" },
+        { "id": 3, "korean": "코", "english": "Nose" },
+        { "id": 4, "korean": "입", "english": "Mouth" },
+        { "id": 5, "korean": "귀", "english": "Ear" },
+        { "id": 6, "korean": "손", "english": "Hand" },
+        { "id": 7, "korean": "발", "english": "Foot" },
+        { "id": 8, "korean": "팔", "english": "Arm" },
+        { "id": 9, "korean": "다리", "english": "Leg" },
+        { "id": 10, "korean": "배", "english": "Stomach" }
       ]
     }
   ]
