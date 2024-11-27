@@ -1,0 +1,40 @@
+{
+  "chapters": [
+    {
+      "name": "Greetings",
+      "image": "https://images.unsplash.com/photo-1596633607590-7156877ef734?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "안녕하세요", "english": "Hello" },
+        { "id": 2, "korean": "안녕히 가세요", "english": "Goodbye" },
+        { "id": 3, "korean": "감사합니다", "english": "Thank you" },
+        { "id": 4, "korean": "죄송합니다", "english": "I'm sorry" },
+        { "id": 5, "korean": "잘 지내세요?", "english": "How are you?" },
+        { "id": 6, "korean": "반갑습니다", "english": "Nice to meet you" },
+        { "id": 7, "korean": "오랜만입니다", "english": "Long time no see" },
+        {
+          "id": 8,
+          "korean": "수고하세요",
+          "english": "Thank you for your hard work"
+        },
+        { "id": 9, "korean": "좋은 하루 되세요", "english": "Have a nice day" },
+        { "id": 10, "korean": "좋은 밤 되세요", "english": "Have a nice night" }
+      ]
+    },
+    {
+      "name": "Colors",
+      "image": "https://images.unsplash.com/photo-1525909002-1b05e0c869d8?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "빨간색", "english": "Red" },
+        { "id": 2, "korean": "파란색", "english": "Blue" },
+        { "id": 3, "korean": "초록색", "english": "Green" },
+        { "id": 4, "korean": "노란색", "english": "Yellow" },
+        { "id": 5, "korean": "검은색", "english": "Black" },
+        { "id": 6, "korean": "흰색", "english": "White" },
+        { "id": 7, "korean": "주황색", "english": "Orange" },
+        { "id": 8, "korean": "보라색", "english": "Purple" },
+        { "id": 9, "korean": "핑크색", "english": "Pink" },
+        { "id": 10, "korean": "회색", "english": "Grey" }
+      ]
+    }
+  ]
+}
