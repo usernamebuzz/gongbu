@@ -47,6 +47,38 @@
         { "id": 9, "korean": "다리", "english": "Leg" },
         { "id": 10, "korean": "배", "english": "Stomach" }
       ]
+    },
+    {
+      "name": "Furniture",
+      "image": "https://images.unsplash.com/photo-1567016432779-094069958ea5?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "침대", "english": "Bed" },
+        { "id": 2, "korean": "의자", "english": "Chair" },
+        { "id": 3, "korean": "책상", "english": "Desk" },
+        { "id": 4, "korean": "소파", "english": "Sofa" },
+        { "id": 5, "korean": "냉장고", "english": "Refrigerator" },
+        { "id": 6, "korean": "전자레인지", "english": "Microwave" },
+        { "id": 7, "korean": "세탁기", "english": "Washing machine" },
+        { "id": 8, "korean": "텔레비전", "english": "Television" },
+        { "id": 9, "korean": "컴퓨터", "english": "Computer" },
+        { "id": 10, "korean": "에어컨", "english": "Air conditioner" }
+      ]
+    },
+    {
+      "name": "Verbs",
+      "image": "https://images.unsplash.com/photo-1602067340370-bdcebe8d1930?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "먹다", "english": "To eat" },
+        { "id": 2, "korean": "자다", "english": "To sleep" },
+        { "id": 3, "korean": "가다", "english": "To go" },
+        { "id": 4, "korean": "오다", "english": "To come" },
+        { "id": 5, "korean": "보다", "english": "To see/watch" },
+        { "id": 6, "korean": "듣다", "english": "To listen" },
+        { "id": 7, "korean": "말하다", "english": "To speak" },
+        { "id": 8, "korean": "읽다", "english": "To read" },
+        { "id": 9, "korean": "쓰다", "english": "To write" },
+        { "id": 10, "korean": "공부하다", "english": "To study" }
+      ]
     }
   ]
 }
