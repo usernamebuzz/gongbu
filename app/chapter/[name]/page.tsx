@@ -20,7 +20,6 @@ export default async function ChapterPage({ params }: { params: Params }) {
     <div className='min-h-screen bg-gray-50 p-4 flex flex-col'>
       <div className='max-w-md mx-auto w-full flex-grow'>
         <Link href='/'>
-          {' '}
           <Button variant='ghost' className='mb-4'>
             <ChevronLeft className='h-4 w-4 mr-2' />
             Back to Chapters
