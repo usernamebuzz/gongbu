@@ -65,6 +65,22 @@
       ]
     },
     {
+      "name": "Furniture",
+      "image": "https://images.unsplash.com/photo-1567016432779-094069958ea5?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        {"id": 1,"korean":"책장","english":"Bookshelf"},
+        {"id": 2,"korean":"서랍장","english":"Drawer"},
+        {"id": 3,"korean":"테이블","english":"Table"},
+        {"id": 4,"korean":"옷장","english":"Wardrobe"},
+        {"id": 5,"korean":"거울","english":"Mirror"},
+        {"id": 6,"korean":"벤치","english":"Bench"},
+        {"id": 7,"korean":"탁자","english":"Coffee table"},
+        {"id": 8,"korean":"식탁","english":"Dining table"},
+        {"id": 9,"korean":"밥솥","english":"Rice cooker"},
+        {"id": 10,"korean":"전등","english":"lamp"}
+      ]
+    },
+    {
       "name": "Verbs",
       "image": "https://images.unsplash.com/photo-1602067340370-bdcebe8d1930?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "words": [
@@ -79,6 +95,71 @@
         { "id": 9, "korean": "쓰다", "english": "To write" },
         { "id": 10, "korean": "공부하다", "english": "To study" }
       ]
+    },
+    {
+      "name": "Verbs2",
+      "image": "https://images.unsplash.com/photo-1602067340370-bdcebe8d1930?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 11, "korean": "가르치다", "english": "To teach" },
+        { "id": 12, "korean": "받다", "english": "To receive" },
+        { "id": 13, "korean": "만나다", "english": "To meet" },
+        { "id": 14, "korean": "사다", "english": "To buy" },
+        { "id": 15, "korean": "팔다", "english": "To sell" },
+        { "id": 16, "korean": "일어나다", "english": "To wake up" },
+        { "id": 17, "korean": "시작하다", "english": "To start" },
+        { "id": 18, "korean": "끝나다", "english": "To finish" },
+        { "id": 19, "korean": "기다리다", "english": "To wait" },
+        { "id": 20, "korean": "도와주다", "english": "To help" }
+      ]
+    },
+    {
+      "name": "Food",
+      "image": "https://images.unsplash.com/photo-1498579397066-22750a3cb424?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "사과", "english": "Apple" },
+        { "id": 2, "korean": "두부", "english": "Tofu" },
+        { "id": 3, "korean": "쌀", "english": "Rice" },
+        { "id": 4, "korean": "빵", "english": "Bread" },
+        { "id": 5, "korean": "감자", "english": "Potato" },
+        { "id": 6, "korean": "채소/야채", "english": "Vegetable" },
+        { "id": 7, "korean": "과일", "english": "Fruit" },
+        { "id": 8, "korean": "당근", "english": "Carrot" },
+        { "id": 9, "korean": "계란", "english": "Egg" },
+        { "id": 10, "korean": "파", "english": "Green onion" }
+      ]
+    },
+    {
+      "name": "Animal",
+      "image": "https://images.unsplash.com/photo-1509987300714-11c90a6d40e7?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "개", "english": "Dog" },
+        { "id": 2, "korean": "다람쥐", "english": "squirrel" },
+        { "id": 3, "korean": "새", "english": "Bird" },
+        { "id": 4, "korean": "늑대", "english": "wolf" },
+        { "id": 5, "korean": "토끼", "english": "Rabbit" },
+        { "id": 6, "korean": "말", "english": "Horse" },
+        { "id": 7, "korean": "소", "english": "Cow" },
+        { "id": 8, "korean": "양", "english": "Sheep" },
+        { "id": 9, "korean": "코끼리", "english": "Elephant" },
+        { "id": 10, "korean": "호랑이", "english": "Tiger" }
+      ]
+    },
+    {
+      "name": "Adjective",
+      "image": "https://images.unsplash.com/photo-1725781760758-09cb1d6ef216?q=80&w=3038&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "크다", "english": "Big" },
+        { "id": 2, "korean": "작다", "english": "Small" },
+        { "id": 3, "korean": "길다", "english": "Long" },
+        { "id": 4, "korean": "짧다", "english": "Short" },
+        { "id": 5, "korean": "빠르다", "english": "Fast" },
+        { "id": 6, "korean": "느리다", "english": "Slow" },
+        { "id": 7, "korean": "춥다", "english": "Cold" },
+        { "id": 8, "korean": "덥다", "english": "Hot" },
+        { "id": 9, "korean": "잘생겼다", "english": "Handsome" },
+        { "id": 10, "korean": "좋다", "english": "Good" }
+      ]
     }
+    
   ]
 }
