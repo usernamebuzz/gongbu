@@ -1,4 +1,4 @@
-import { useSlider } from "./use-slider"
+import { useSlider } from './use-slider'
 
 export function useTestProgress(totalWords: number) {
   const { currentIndex, next, progress } = useSlider(totalWords)

@@ -1,7 +1,8 @@
+import data from '@/app/data/index.json'
+import { Card, CardContent } from '@/components/ui/card'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Card, CardContent } from '@/components/ui/card'
-import data from '@/app/data/index.json'
+
 import { Chapter } from './types'
 
 export default function MainPage() {

@@ -11,7 +11,11 @@
         { "id": 5, "korean": "잘 지내세요?", "english": "How are you?" },
         { "id": 6, "korean": "반갑습니다", "english": "Nice to meet you" },
         { "id": 7, "korean": "오랜만입니다", "english": "Long time no see" },
-        { "id": 8, "korean": "고생하셨습니다", "english": "Thank you for your hard work" },
+        {
+          "id": 8,
+          "korean": "고생하셨습니다",
+          "english": "Thank you for your hard work"
+        },
         { "id": 9, "korean": "좋은 하루 되세요", "english": "Have a nice day" },
         { "id": 10, "korean": "좋은 밤 되세요", "english": "Have a nice night" }
       ]
@@ -68,16 +72,16 @@
       "name": "Furniture2",
       "image": "https://images.unsplash.com/photo-1567016432779-094069958ea5?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "words": [
-        {"id": 1,"korean":"책장","english":"Bookshelf"},
-        {"id": 2,"korean":"서랍장","english":"Drawer"},
-        {"id": 3,"korean":"테이블","english":"Table"},
-        {"id": 4,"korean":"옷장","english":"Wardrobe"},
-        {"id": 5,"korean":"거울","english":"Mirror"},
-        {"id": 6,"korean":"벤치","english":"Bench"},
-        {"id": 7,"korean":"탁자","english":"Coffee table"},
-        {"id": 8,"korean":"식탁","english":"Dining table"},
-        {"id": 9,"korean":"밥솥","english":"Rice cooker"},
-        {"id": 10,"korean":"전등","english":"lamp"}
+        { "id": 1, "korean": "책장", "english": "Bookshelf" },
+        { "id": 2, "korean": "서랍장", "english": "Drawer" },
+        { "id": 3, "korean": "테이블", "english": "Table" },
+        { "id": 4, "korean": "옷장", "english": "Wardrobe" },
+        { "id": 5, "korean": "거울", "english": "Mirror" },
+        { "id": 6, "korean": "벤치", "english": "Bench" },
+        { "id": 7, "korean": "탁자", "english": "Coffee table" },
+        { "id": 8, "korean": "식탁", "english": "Dining table" },
+        { "id": 9, "korean": "밥솥", "english": "Rice cooker" },
+        { "id": 10, "korean": "전등", "english": "lamp" }
       ]
     },
     {
@@ -160,6 +164,5 @@
         { "id": 10, "korean": "좋다", "english": "Good" }
       ]
     }
-    
   ]
 }

@@ -1,8 +1,10 @@
-import { useState, useCallback } from 'react'
+import { useCallback, useState } from 'react'
+
 import { useSlider } from './use-slider'
 
 export function useCardProgress(totalItems: number) {
-  const { currentIndex, setCurrentIndex, next, previous, progress } = useSlider(totalItems)
+  const { currentIndex, setCurrentIndex, next, previous, progress } =
+    useSlider(totalItems)
   const [showMeaning, setShowMeaning] = useState(true)
 
   const handleNext = useCallback(() => {
@@ -27,6 +29,6 @@ export function useCardProgress(totalItems: number) {
     toggleMeaning,
     setCurrentIndex,
     setShowMeaning,
-    progress
+    progress,
   }
 }

@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useCallback, useState } from 'react'
 
 export function useSlider(totalItems: number) {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -18,6 +18,6 @@ export function useSlider(totalItems: number) {
     setCurrentIndex,
     next,
     previous,
-    progress
+    progress,
   }
 }

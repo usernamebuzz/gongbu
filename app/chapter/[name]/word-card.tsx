@@ -1,13 +1,12 @@
 'use client'
 
+import { useCardProgress } from '@/app/hooks/use-card-progress'
+import { useShuffleWords } from '@/app/hooks/use-shuffle-words'
+import { Word } from '@/app/types'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Progress } from '@/components/ui/progress'
-import { Word } from '@/app/types'
 import { ChevronLeft, ChevronRight, Shuffle } from 'lucide-react'
-import { useShuffleWords } from '@/app/hooks/use-shuffle-words'
-import { useCardProgress } from '@/app/hooks/use-card-progress'
-
 
 interface WordCardProps {
   words: Word[]
@@ -22,7 +21,7 @@ export function WordCard({ words: initialWords }: WordCardProps) {
     handlePrevious,
     toggleMeaning,
     setCurrentIndex,
-    setShowMeaning
+    setShowMeaning,
   } = useCardProgress(words.length)
 
   const handleShuffle = () => {
