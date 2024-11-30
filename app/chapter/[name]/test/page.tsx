@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Progress } from '@/components/ui/progress'
+import { ChevronLeft } from 'lucide-react'
 import { useParams, useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
@@ -59,6 +60,10 @@ export default function TestPage() {
   return (
     <div className='min-h-screen bg-gray-50 p-4 flex flex-col'>
       <div className='max-w-md mx-auto w-full flex-grow'>
+        <Button variant='ghost' className='mb-4' onClick={() => router.back()}>
+          <ChevronLeft className='h-4 w-4 mr-2' />
+          Back to Words
+        </Button>
         <h2 className='text-2xl font-bold mb-4'>단어 테스트</h2>
         <Card>
           <CardContent className='p-6'>
