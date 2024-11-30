@@ -4,7 +4,8 @@ import data from '@/app/data/index.json'
 import { useAnswerCheck } from '@/app/hooks/use-check-answer'
 import { useTestMode } from '@/app/hooks/use-test-mode'
 import { useTestProgress } from '@/app/hooks/use-test-progress'
-import { Chapter } from '@/app/types'
+import { Chapter, Word } from '@/app/types'
+import { shuffleArray } from '@/app/utils/shuffle-array'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -16,6 +17,7 @@ export default function TestPage() {
   const router = useRouter()
   const params = useParams<{ name: string }>()
   const [chapter, setChapter] = useState<Chapter | null>(null)
+  const [shuffledWords, setShuffledWords] = useState<Word[]>([])
 
   useEffect(() => {
     if (params.name) {
@@ -23,10 +25,14 @@ export default function TestPage() {
         (c: Chapter) => c.name === params.name
       )
       setChapter(foundChapter || null)
+      if (foundChapter?.words) {
+        setShuffledWords(shuffleArray(foundChapter.words))
+      }
     }
-  })
+  }, [params.name])
+
   const { currentIndex, nextWord, progress } = useTestProgress(
-    chapter?.words?.length || 0
+    shuffledWords?.length || 0
   )
   const { testMode, toggleTestMode } = useTestMode()
   const {
@@ -36,7 +42,7 @@ export default function TestPage() {
     setUserAnswer,
     checkAnswer,
     resetAnswer,
-  } = useAnswerCheck(chapter?.words || [])
+  } = useAnswerCheck(shuffledWords || [])
 
   const handleCheckAnswer = () => {
     checkAnswer(currentIndex, testMode)
@@ -48,7 +54,7 @@ export default function TestPage() {
   }
 
   const handleFinish = () => {
-    alert(`테스트 완료! 점수: ${score}/${chapter?.words?.length}`)
+    alert(`테스트 완료! 점수: ${score}/${shuffledWords?.length}`)
     router.push('/')
   }
 
@@ -60,14 +66,14 @@ export default function TestPage() {
           <CardContent className='p-6'>
             <div className='text-center mb-4'>
               <p className='text-sm text-gray-500'>
-                {currentIndex + 1} / {chapter?.words?.length}
+                {currentIndex + 1} / {shuffledWords?.length}
               </p>
             </div>
             <div className='mb-4'>
               <p className='text-xl font-semibold mb-2'>
                 {testMode === 'english'
-                  ? chapter?.words[currentIndex].korean
-                  : chapter?.words[currentIndex].english}
+                  ? shuffledWords[currentIndex]?.korean
+                  : shuffledWords[currentIndex]?.english}
               </p>
               <Input
                 type='text'
@@ -84,24 +90,22 @@ export default function TestPage() {
             ) : (
               <div className='mb-4'>
                 <p
-                  className={`text-lg ${userAnswer.toLowerCase().trim() === chapter?.words[currentIndex][testMode].toLowerCase().trim() ? 'text-green-500' : 'text-red-500'}`}
+                  className={`text-lg ${userAnswer.toLowerCase().trim() === shuffledWords[currentIndex][testMode].toLowerCase().trim() ? 'text-green-500' : 'text-red-500'}`}
                 >
                   {userAnswer.toLowerCase().trim() ===
-                  chapter?.words[currentIndex]?.[testMode]
-                    ?.toLowerCase()
-                    ?.trim()
+                  shuffledWords[currentIndex]?.[testMode]?.toLowerCase()?.trim()
                     ? '정답입니다!'
-                    : `틀렸습니다. 정답은 ${chapter?.words[currentIndex]?.[testMode]}입니다.`}
+                    : `틀렸습니다. 정답은 ${shuffledWords[currentIndex]?.[testMode]}입니다.`}
                 </p>
                 <Button
                   onClick={
-                    currentIndex < (chapter?.words?.length ?? 0) - 1
+                    currentIndex < (shuffledWords?.length ?? 0) - 1
                       ? handleNextWord
                       : handleFinish
                   }
                   className='w-full mt-2'
                 >
-                  {currentIndex < (chapter?.words?.length ?? 0) - 1
+                  {currentIndex < (shuffledWords?.length ?? 0) - 1
                     ? '다음 단어'
                     : '테스트 종료'}
                 </Button>

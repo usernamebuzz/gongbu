@@ -1,19 +1,21 @@
 'use client'
 
 import { useCardProgress } from '@/app/hooks/use-card-progress'
-import { useShuffleWords } from '@/app/hooks/use-shuffle-words'
 import { Word } from '@/app/types'
+import { shuffleArray } from '@/app/utils/shuffle-array'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Progress } from '@/components/ui/progress'
 import { ChevronLeft, ChevronRight, Shuffle } from 'lucide-react'
+import { useState } from 'react'
 
 interface WordCardProps {
   words: Word[]
 }
 
 export function WordCard({ words: initialWords }: WordCardProps) {
-  const { words, shuffleWords } = useShuffleWords(initialWords)
+  const [words, setWords] = useState<Word[]>(initialWords)
+
   const {
     currentIndex,
     showMeaning,
@@ -25,7 +27,8 @@ export function WordCard({ words: initialWords }: WordCardProps) {
   } = useCardProgress(words.length)
 
   const handleShuffle = () => {
-    shuffleWords()
+    const shuffledWords = shuffleArray(words)
+    setWords(shuffledWords)
     setCurrentIndex(0)
     setShowMeaning(true)
   }
