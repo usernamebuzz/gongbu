@@ -2,8 +2,8 @@
 
 import data from '@/app/data/index.json'
 import { useAnswerCheck } from '@/app/hooks/use-check-answer'
+import { useSlider } from '@/app/hooks/use-slider'
 import { useTestMode } from '@/app/hooks/use-test-mode'
-import { useTestProgress } from '@/app/hooks/use-test-progress'
 import { Chapter, Word } from '@/app/types'
 import { shuffleArray } from '@/app/utils/shuffle-array'
 import { Button } from '@/components/ui/button'
@@ -31,9 +31,7 @@ export default function TestPage() {
     }
   }, [params.name])
 
-  const { currentIndex, nextWord, progress } = useTestProgress(
-    shuffledWords?.length || 0
-  )
+  const { currentIndex, next, progress } = useSlider(shuffledWords?.length || 0)
   const { testMode, toggleTestMode } = useTestMode()
   const {
     userAnswer,
@@ -49,7 +47,7 @@ export default function TestPage() {
   }
 
   const handleNextWord = () => {
-    nextWord()
+    next()
     resetAnswer()
   }
 
