@@ -163,6 +163,22 @@
         { "id": 9, "korean": "잘생겼다", "english": "Handsome" },
         { "id": 10, "korean": "좋다", "english": "Good" }
       ]
+    },
+    {
+      "name": "Adjective2",
+      "image": "https://images.unsplash.com/photo-1725781760758-09cb1d6ef216?q=80&w=3038&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "비싸다", "english": "Expensive" },
+        { "id": 2, "korean": "싸다", "english": "Cheap" },
+        { "id": 3, "korean": "재미있다", "english": "Interesting" },
+        { "id": 4, "korean": "피곤하다", "english": "Tired" },
+        { "id": 5, "korean": "행복하다", "english": "Happy" },
+        { "id": 6, "korean": "슬프다", "english": "Sad" },
+        { "id": 7, "korean": "깨끗하다", "english": "Clean" },
+        { "id": 8, "korean": "바쁘다", "english": "Busy" },
+        { "id": 9, "korean": "쉽다", "english": "Easy" },
+        { "id": 10, "korean": "어렵다", "english": "Difficult" }
+      ]
     }
   ]
 }
