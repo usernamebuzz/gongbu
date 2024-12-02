@@ -74,11 +74,11 @@
       "words": [
         { "id": 1, "korean": "책장", "english": "Bookshelf" },
         { "id": 2, "korean": "서랍장", "english": "Drawer" },
-        { "id": 3, "korean": "테이블", "english": "Table" },
+        { "id": 3, "korean": "탁자", "english": "Table" },
         { "id": 4, "korean": "옷장", "english": "Wardrobe" },
         { "id": 5, "korean": "거울", "english": "Mirror" },
         { "id": 6, "korean": "벤치", "english": "Bench" },
-        { "id": 7, "korean": "탁자", "english": "Coffee table" },
+        { "id": 7, "korean": "스탠드", "english": "Desk lamp" },
         { "id": 8, "korean": "식탁", "english": "Dining table" },
         { "id": 9, "korean": "밥솥", "english": "Rice cooker" },
         { "id": 10, "korean": "전등", "english": "lamp" }
