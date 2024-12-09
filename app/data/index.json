@@ -117,6 +117,22 @@
       ]
     },
     {
+      "name": "Verbs3",
+      "image": "https://images.unsplash.com/photo-1602067340370-bdcebe8d1930?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 21, "korean": "걷다", "english": "To walk" },
+        { "id": 22, "korean": "달리다", "english": "To run" },
+        { "id": 23, "korean": "수영하다", "english": "To swim" },
+        { "id": 24, "korean": "날다", "english": "To fly" },
+        { "id": 25, "korean": "뛰다", "english": "To jump" },
+        { "id": 26, "korean": "찾다", "english": "To find" },
+        { "id": 27, "korean": "잃다", "english": "To lose" },
+        { "id": 28, "korean": "숨다", "english": "To hide" },
+        { "id": 29, "korean": "얻다", "english": "To get" },
+        { "id": 30, "korean": "주다", "english": "To give" }
+      ]
+    },
+    {
       "name": "Food",
       "image": "https://images.unsplash.com/photo-1498579397066-22750a3cb424?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "words": [
