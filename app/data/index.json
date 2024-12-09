@@ -195,6 +195,22 @@
         { "id": 9, "korean": "쉽다", "english": "Easy" },
         { "id": 10, "korean": "어렵다", "english": "Difficult" }
       ]
+    },
+    {
+      "name": "weather",
+      "image": "https://images.unsplash.com/photo-1630260643564-7f9c9c140682?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "비", "english": "Rain" },
+        { "id": 2, "korean": "눈", "english": "Snow" },
+        { "id": 3, "korean": "바람", "english": "Wind" },
+        { "id": 4, "korean": "화창하다", "english": "Sunny" },
+        { "id": 5, "korean": "흐리다", "english": "Cloudy" },
+        { "id": 6, "korean": "온도", "english": "Temperature" },
+        { "id": 7, "korean": "습도", "english": "Humidity" },
+        { "id": 8, "korean": "기압", "english": "Pressure" },
+        { "id": 9, "korean": "날씨가 좋다", "english": "The weather is nice" },
+        { "id": 10, "korean": "날씨가 나쁘다", "english": "The weather is bad" }
+      ]
     }
   ]
 }
