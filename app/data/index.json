@@ -211,6 +211,52 @@
         { "id": 9, "korean": "날씨가 좋다", "english": "The weather is nice" },
         { "id": 10, "korean": "날씨가 나쁘다", "english": "The weather is bad" }
       ]
+    },
+    {
+      "name": "direction",
+      "image": "https://images.unsplash.com/photo-1525081905268-fc0b46e9d786?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "왼쪽", "english": "Left" },
+        { "id": 2, "korean": "오른쪽", "english": "Right" },
+        { "id": 3, "korean": "위", "english": "Up" },
+        { "id": 4, "korean": "아래", "english": "Down" },
+        { "id": 5, "korean": "앞", "english": "Front" },
+        { "id": 6, "korean": "뒤", "english": "Back" },
+        { "id": 7, "korean": "앞으로", "english": "Forward" },
+        { "id": 8, "korean": "뒤로", "english": "Backward" }
+      ]
+    },
+    {
+      "name": "days",
+      "image": "https://images.unsplash.com/photo-1541696395-2abb1755c89a?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "월요일", "english": "Monday" },
+        { "id": 2, "korean": "화요일", "english": "Tuesday" },
+        { "id": 3, "korean": "수요일", "english": "Wednesday" },
+        { "id": 4, "korean": "목요일", "english": "Thursday" },
+        { "id": 5, "korean": "금요일", "english": "Friday" },
+        { "id": 6, "korean": "토요일", "english": "Saturday" },
+        { "id": 7, "korean": "일요일", "english": "Sunday" },
+        { "id": 8, "korean": "공휴일", "english": "Holiday" },
+        { "id": 9, "korean": "주말", "english": "Weekend" },
+        { "id": 10, "korean": "평일", "english": "Weekday" }
+      ]
+    },
+    {
+      "name": "number",
+      "image": "https://images.unsplash.com/photo-1474546652694-a33dd8161d66?q=80&w=3284&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "하나/일", "english": "One" },
+        { "id": 2, "korean": "둘/이", "english": "Two" },
+        { "id": 3, "korean": "셋/삼", "english": "Three" },
+        { "id": 4, "korean": "넷/사", "english": "Four" },
+        { "id": 5, "korean": "다섯/오", "english": "Five" },
+        { "id": 6, "korean": "여섯/육", "english": "Six" },
+        { "id": 7, "korean": "일곱/칠", "english": "Seven" },
+        { "id": 8, "korean": "여덟/팔", "english": "Eight" },
+        { "id": 9, "korean": "아홉/구", "english": "Nine" },
+        { "id": 10, "korean": "열/십", "english": "Ten" }
+      ]
     }
   ]
 }
