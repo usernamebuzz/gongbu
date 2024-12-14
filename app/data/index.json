@@ -243,6 +243,40 @@
       ]
     },
     {
+      "name": "months",
+      "image": "https://images.unsplash.com/photo-1541696395-2abb1755c89a?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "1월", "english": "January" },
+        { "id": 2, "korean": "2월", "english": "February" },
+        { "id": 3, "korean": "3월", "english": "March" },
+        { "id": 4, "korean": "4월", "english": "April" },
+        { "id": 5, "korean": "5월", "english": "May" },
+        { "id": 6, "korean": "6월", "english": "June" },
+        { "id": 7, "korean": "7월", "english": "July" },
+        { "id": 8, "korean": "8월", "english": "August" },
+        { "id": 9, "korean": "9월", "english": "September" },
+        { "id": 10, "korean": "10월", "english": "October" },
+        { "id": 11, "korean": "11월", "english": "November" },
+        { "id": 12, "korean": "12월", "english": "December" }
+      ]
+    },
+    {
+      "name": "time",
+      "image": "https://images.unsplash.com/photo-1541696395-2abb1755c89a?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "어제", "english": "Yesterday" },
+        { "id": 2, "korean": "오늘", "english": "Today" },
+        { "id": 3, "korean": "내일", "english": "Tomorrow" },
+        { "id": 4, "korean": "모레", "english": "Day after tomorrow" },
+        { "id": 5, "korean": "지금", "english": "Now" },
+        { "id": 6, "korean": "요즘", "english": "Recently" },
+        { "id": 7, "korean": "자주", "english": "Often" },
+        { "id": 8, "korean": "가끔", "english": "Sometimes" },
+        { "id": 9, "korean": "나중에", "english": "Later" },
+        { "id": 10, "korean": "아까", "english": "A while ago" }
+      ]
+    },
+    {
       "name": "number",
       "image": "https://images.unsplash.com/photo-1474546652694-a33dd8161d66?q=80&w=3284&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "words": [
@@ -256,6 +290,54 @@
         { "id": 8, "korean": "여덟/팔", "english": "Eight" },
         { "id": 9, "korean": "아홉/구", "english": "Nine" },
         { "id": 10, "korean": "열/십", "english": "Ten" }
+      ]
+    },
+    {
+      "name": "transportation",
+      "image": "https://images.unsplash.com/photo-1490650404312-a2175773bbf5?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "버스", "english": "Bus" },
+        { "id": 2, "korean": "기차", "english": "Train" },
+        { "id": 3, "korean": "자동차", "english": "Car" },
+        { "id": 4, "korean": "비행기", "english": "Plane" },
+        { "id": 5, "korean": "지하철", "english": "Subway" },
+        { "id": 6, "korean": "자전거", "english": "Bicycle" },
+        { "id": 7, "korean": "오토바이", "english": "Motorcycle" },
+        { "id": 8, "korean": "택시", "english": "Taxi" },
+        { "id": 9, "korean": "기차", "english": "Train" },
+        { "id": 10, "korean": "N호선", "english": "Line N" }
+      ]
+    },
+    {
+      "name": "laboratory expression",
+      "image": "https://images.unsplash.com/photo-1581090698407-7d93959da202?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "출근하다", "english": "To go to work" },
+        { "id": 2, "korean": "퇴근하다", "english": "To leave work" },
+        { "id": 3, "korean": "일하다", "english": "To work" },
+        { "id": 4, "korean": "휴식하다", "english": "To rest" },
+        { "id": 5, "korean": "휴가", "english": "Vacation" },
+        { "id": 6, "korean": "일을 끝내다", "english": "To finish work" },
+        { "id": 7, "korean": "일을 시작하다", "english": "To start work" },
+        { "id": 8, "korean": "실험하다", "english": "To experiment" },
+        { "id": 9, "korean": "연구하다", "english": "To research" },
+        { "id": 10, "korean": "공부하다", "english": "To study" }
+      ]
+    },
+    {
+      "name": "experiment expression",
+      "image": "https://images.unsplash.com/photo-1581090698407-7d93959da202?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1486825586573-7131f7991bdd?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "words": [
+        { "id": 1, "korean": "결과", "english": "Result" },
+        { "id": 2, "korean": "실험", "english": "Experiment" },
+        { "id": 3, "korean": "데이터", "english": "Data" },
+        { "id": 4, "korean": "분석", "english": "Analysis" },
+        { "id": 5, "korean": "결론", "english": "Conclusion" },
+        { "id": 6, "korean": "가설", "english": "Hypothesis" },
+        { "id": 7, "korean": "변수", "english": "Variable" },
+        { "id": 8, "korean": "제어", "english": "Control" },
+        { "id": 9, "korean": "예측", "english": "Prediction" },
+        { "id": 10, "korean": "실험기구", "english": "Laboratory equipment" }
       ]
     }
   ]
